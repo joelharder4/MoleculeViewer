@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+        <script src="server.js"></script>
+    </head>
+
+    <body>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            /* Add a black background color to the top navigation */
+            .topnav {
+                background-color: #644921;
+                overflow: hidden;
+                box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.39);
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                position: relative;
+                float: right;
+                margin-top: 34px;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 12px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+
+            .topnav img {
+                float: left;
+                padding: 10px 10px;
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #EDEDED;
+                color: #404040;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: #4D3614;
+                color: #EDEDED;
+            }
+
+            .table {
+                display: table;
+                margin-left: 3%;
+                margin-top: 40px;
+                width: 94%;
+                border-collapse: collapse;
+                border: 2px solid #E0E0E0;
+            }
+
+            td, th {
+                padding: 20px 10px;
+                font-family: sans-serif;
+                font-size: 20px;
+                text-align: left;
+            }
+
+            tr:nth-child(even) {
+                background-color: #E0E0E0;
+            }
+
+            .view {
+                width: 50px;
+            }
+
+            .delete {
+                width: 40px;
+            }
+
+            h1 {
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 50px;
+                text-align: center;
+                margin-left: 3%;
+                margin-top: 40px;
+            }
+
+            .upload {
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: sans-serif;
+                display: block;
+                margin-top: 30px;
+                width: 200px;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 100px;
+            }
+
+            .button {
+                cursor: pointer;
+                padding: 12px 16px;
+                width: 200px;
+                background-color: #644921;
+                box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.39);
+            }
+
+            .upload label {
+                display: block;
+                margin-top: 15px;
+                color: #f2f2f2;
+                text-align: center;
+            }
+
+            .upload span {
+                text-align: center;
+                font-size: 12px;
+            }
+
+            .upload input {
+                display: none;
+            }
+
+            .textfield {
+                padding: none;
+                width: 232px;
+                display: none;
+            }
+
+            .textfield input {
+                display: block;
+                padding: 12px 16px;
+                text-align: center;
+                border-style: solid;
+                outline: none;
+                font-size: inherit;
+                font-weight: inherit;
+                font-family: inherit;
+                /* background-color: inherit; */
+                /* color: inherit; */
+                opacity: 0.5;
+                width: 100%;
+                border-color: #eeeeee;
+                box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.39);
+            }
+
+            ::placeholder {
+                color: inherit;
+                opacity: 0.5;
+            }
+        </style>
+        
+        <div class="topnav">
+            <img src="MoleculeViewerWhite.png" alt="Molecule Viewer Logo" width="350">
+            <a href="/elements">Elements</a>
+            <a class="active" href="/molecules">Molecules</a>
+            <a href="/home">Home</a>
+        </div>
+
+        <h1>Molecule Database</h1>
+
+        <table class="table">
+            <tr>
+                <th>Molecule Name</th>
+                <th>Atoms</th>
+                <th>Bonds</th>
+            </tr>
+            moleculerows
+        </table>
+        
+        <div class="upload">
+            <label for="inputTag" class="button">
+                Select SDF File
+                <i class="fa fa-2x fa-camera"></i>
+                <input onchange="onUpload()" id="inputTag" type="file" accept=".sdf"/>
+                <br/>
+                <span id="sdfName"></span>
+            </label>
+            <label for="nameTag" class="textfield">
+                <input type="text" id="nameTag" placeholder="Molecule Name" autocomplete="off"/>
+            </label>
+            <label for="submitTag" class="button">
+                Submit
+                <i class="fa fa-2x fa-camera"></i>
+                <input onclick="onSubmit()" id="submitTag" type="submit"/>
+            </label>
+        </div>
+        
+    </body>
+</html>

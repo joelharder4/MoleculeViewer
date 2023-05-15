@@ -1,0 +1,80 @@
+<html>
+    <body>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            /* Add a black background color to the top navigation */
+            .topnav {
+                background-color: #644921;
+                overflow: hidden;
+                box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.39);
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                position: relative;
+                float: right;
+                margin-top: 34px;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 12px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+
+            .topnav img {
+                float: left;
+                padding: 10px 10px;
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #EDEDED;
+                color: #404040;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: #4D3614;
+                color: #EDEDED;
+            }
+
+            .centerlogo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+                width: 60%;
+            }
+        </style>
+        
+        <div class="topnav">
+            <img src="MoleculeViewerWhite.png" alt="Molecule Viewer Logo" width="350">
+            <a href="/elements">Elements</a>
+            <a href="/molecules">Molecules</a>
+            <a class="active" href="/home">Home</a>
+        </div>
+
+        <div>
+            <img src="mol1.png" alt="Caffeine Molecule" style="margin-left: 15%; margin-top: 3%; width: 15%;">
+            <img src="mol2.png" alt="Water Molecule" style="margin-left: 10%; margin-bottom: 7%; width: 4%;">
+            <img src="mol3.png" alt="Molecule" style="margin-left: 15%; margin-top: 3%; width: 15%;">
+            <img src="mol2.png" alt="Molecule" style="margin-left: 5%; margin-top: 3%; width: 4%; rotate:80deg">
+        </div>
+
+        <img src="MoleculeViewerGrey.png" alt="Molecule Viewer Logo" class="centerlogo">
+
+        <div>
+            <img src="mol2.png" alt="Water Molecule" style="margin-left: 10%; margin-bottom: 7%; width: 4%; rotate: 50deg;">
+            <img src="mol3.png" alt="Molecule" style="margin-left: 15%; margin-top: 3%; width: 15%; rotate: 170deg;">
+            <img src="mol2.png" alt="Molecule" style="margin-left: 3%; margin-top: 3%; width: 4%; rotate:150deg">
+            <img src="mol2.png" alt="Molecule" style="margin-left: 7%; margin-bottom: 9%; width: 4%; rotate:280deg">
+            <img src="mol1.png" alt="Caffeine Molecule" style="margin-left: 5%; margin-top: 3%; width: 15%; rotate: 70deg;">
+        </div>
+    </body>
+</html>
