@@ -1,7 +1,6 @@
 ### Molecule Viewer
-Author: Joel Harder
-
-Last Edited: April 5, 2023
+##### Author: Joel Harder
+##### Last Edited: April 5, 2023
 
 This project is a python 3 based webserver that utilizes a c library imported to python using the 
 swig development tool. It is intended for storing and viewing various details about any molecules or atoms. 
