@@ -1,5 +1,6 @@
 ### Molecule Viewer
 Author: Joel Harder
+
 Last Edited: April 5, 2023
 
 This project is a python 3 based webserver that utilizes a c library imported to python using the 
