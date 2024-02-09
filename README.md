@@ -11,7 +11,7 @@ can be found at: https://pubchem.ncbi.nlm.nih.gov/ by searching for the name of 
 
 #### Compiling on Linux
 to compile the _molecule library (including swig) use the command: `make`. 
-for an extra layer of assurance use: `make clean` beforehand but it is not necessary
+> If an issue occurs while compiling, run `make clean` then `make` again.
 
 #### Running
 to run the webserver use the command `python server.py port#` where 'port#' is the port you want to host it on.
