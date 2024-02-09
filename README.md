@@ -14,5 +14,6 @@ to compile the _molecule library (including swig) use the command: `make`.
 > If an issue occurs while compiling, run `make clean` then `make` again.
 
 #### Running
-to run the webserver use the command `python server.py port#` where 'port#' is the port you want to host it on.
-Once the server is running, open any browser to: `http://localhost:port#/`.
+to run the webserver use the command `python server.py port#` where 'port#' is the port you want to host it on. I typically use 3000.
+Once the server is running, open `http://localhost:{port#}/` in your preferred browser. 
+> Replace `{port#}` with the port number you used earlier
