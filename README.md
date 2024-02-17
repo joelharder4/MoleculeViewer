@@ -1,6 +1,6 @@
 # Molecule Viewer
-> Course: **CIS\*2750**
-> Author: **Joel Harder**
+> Course: **CIS\*2750**<br>
+> Author: **Joel Harder**<br>
 > Last Edited: **April 5, 2023**
 
 ## About this Project
