@@ -5,7 +5,7 @@
 
 ## About this Project
 
-This project is a python 3 based webserver that utilizes a c library imported to python using the swig development tool. It is intended for storing and viewing various details about any molecules or atoms. 
+This project is a Python3 based webserver that utilizes a C library imported to Python using the swig development tool. It is intended for storing and viewing various details about molecules and elements.
 
 To get started, you can upload any molecule (in the official .sdf format). A large amount of these files can be found at: https://pubchem.ncbi.nlm.nih.gov/ by searching for the name of the molecule.
 
