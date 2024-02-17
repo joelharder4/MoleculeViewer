@@ -29,7 +29,6 @@ Once the server is running, open `http://localhost:<port#>/` in your preferred b
 
 ### Home Page
 ![A screenshot of the home page](images/screenshots/home_page.png?raw=true "Home Page")
-<br><br><br>
 
 ### Molecule Database
 ![A screenshot of the page that lists all molecules in the database](images/screenshots/molecule_database.png?raw=true "Molecule Database")
@@ -39,7 +38,6 @@ Once the server is running, open `http://localhost:<port#>/` in your preferred b
 
 ### Viewing Molecules
 ![A screenshot of the page that displays an svg of a molecule](images/screenshots/view_caffeine.png?raw=true "View of Caffeine")
-<br><br>
 
 ### Rotating Molecules
 ![A screenshot of the page that displays an svg of a molecule and the view is rotated](images/screenshots/view_rotated_isopentanol.png?raw=true "Rotated View of Isopentanol")
